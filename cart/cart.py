@@ -29,7 +29,6 @@ class Cart(object):
                 'name': product.name,
                 'quantity': 1,
                 'price': str(product.price),
-                'image': product.image.url
             }
         else:
             newItem = True
@@ -49,7 +48,6 @@ class Cart(object):
                     'name': product.name,
                     'quantity': 1,
                     'price': str(product.price),
-                    'image': product.image.url
                 }
 
         self.save()
